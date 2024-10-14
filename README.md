@@ -1,1 +1,1 @@
-# loja-de-cosm-ticos
+# loja-de-cosmeticos
