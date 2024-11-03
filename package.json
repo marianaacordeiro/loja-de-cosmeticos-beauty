@@ -1,0 +1,20 @@
+{
+  "name": "loja-de-cosmeticos",
+  "version": "1.0.0",
+  "description": "https://www.figma.com/design/Xb4sZVEiJLshm2cPKIalBs/beauty?node-id=0-1&t=PUNc3dwmXj38RGF7-1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "mariana",
+  "license": "ISC",
+  "dependencies": {
+    "abc": "^0.6.1",
+    "jquery": "^3.7.1",
+    "xyz": "^5.0.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  }
+}
