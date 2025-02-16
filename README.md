@@ -4,16 +4,16 @@
 cosméticos, com intuito de oferecer uma experiência fácil e agradável para os usuários.  
 
 Esta aplicação foi desenvolvido com HTML, CSS e JavaScript.
-# Design das Telas - Figma:
+## Design das Telas - Figma:
 https://www.figma.com/design/Xb4sZVEiJLshm2cPKIalBs/beauty?node-id=0-1&t=PUNc3dwmXj38RGF7-1
-# Design System:
+## Design System:
 https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:3bb54a56-2b42-4a8c-aef0-75d789d3e231
-# Site em Produção - GitHub Pages
-# Framework CSS
+## Site em Produção - GitHub Pages
+## Framework CSS
 ### MaterializeCSS
 # Dependências JavaScript
 ### JQuery - Para realizar animações.
-# Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
+## Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 -  RA1 - Utilizar Frameworks CSS para estilização de elementos HTML e criação de layouts responsivos.
 - [X] Prototipa interfaces adaptáveis para no mínimo os tamanhos de tela mobile e desktop, usando ferramentas de design como Figma, Quant UX ou Sketch.
 - [X] Implementa um layout responsivo de uma página web utilizando um Framework CSS, como Bootstrap, Materialize ou Tailwind (com DaisyUI), aproveitando as técnicas de Flexbox ou Grid oferecidas pelo próprio framework, garantindo que o layout se adapte adequadamente a diferentes tamanhos de tela e dispositivos.
@@ -41,3 +41,18 @@ https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:3bb54a56-2b42-4a8c-aef0-75d789d3e
 - [ ] Realiza requisições assíncronas para APIs públicas, utilizando adequadamente conceitos como AJAX, Fetch API ou bibliotecas, para obter dados dinâmicos e a exibição dos resultados na página web.
 - [ ] Realiza requisições assíncronas para uma API fake utilizando adequadamente conceitos como AJAX, Fetch API ou bibliotecas, para persistir os dados originados de um formulário.
 - [ ] Realiza requisições assíncronas para uma API fake utilizando adequadamente conceitos como AJAX, Fetch API ou bibliotecas, para exibição dos dados na página web.
+## Telas da aplicação
+![Captura de tela 2025-02-16 184520](https://github.com/user-attachments/assets/4978d7e2-8b39-400a-8888-6fef87763554)
+![perfumes](https://github.com/user-attachments/assets/76d8e8a7-ce5e-4523-9eeb-53761954e8de)
+![Captura de tela 2025-02-16 184653](https://github.com/user-attachments/assets/ba1ba20a-efcd-4faf-b708-7893dbc35bd3)
+![Captura de tela 2025-02-16 184722](https://github.com/user-attachments/assets/0fcb009e-4a14-445f-af7c-50053358d3da)
+![Captura de tela 2025-02-16 184741](https://github.com/user-attachments/assets/a9f12eef-2b14-4da2-aa84-fdabcfe87db4)
+![Captura de tela 2025-02-16 184814](https://github.com/user-attachments/assets/386bbf7f-2403-4268-b311-aa375dd2ded6)
+![Captura de tela 2025-02-16 184858](https://github.com/user-attachments/assets/885a582c-5c03-4176-818a-7e24604140fd)
+
+
+
+
+
+
+
