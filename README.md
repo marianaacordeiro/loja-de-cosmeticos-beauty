@@ -10,9 +10,9 @@ https://www.figma.com/design/Xb4sZVEiJLshm2cPKIalBs/beauty?node-id=0-1&t=PUNc3dw
 https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:3bb54a56-2b42-4a8c-aef0-75d789d3e231
 ## Site em Produção - GitHub Pages
 ## Framework CSS
-### MaterializeCSS
+#### MaterializeCSS
 # Dependências JavaScript
-### JQuery - Para realizar animações.
+#### JQuery - Para realizar animações.
 ## Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 -  RA1 - Utilizar Frameworks CSS para estilização de elementos HTML e criação de layouts responsivos.
 - [X] Prototipa interfaces adaptáveis para no mínimo os tamanhos de tela mobile e desktop, usando ferramentas de design como Figma, Quant UX ou Sketch.
