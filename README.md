@@ -10,6 +10,7 @@ https://www.figma.com/design/Xb4sZVEiJLshm2cPKIalBs/beauty?node-id=0-1&t=PUNc3dw
 ## Design System:
 https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:3bb54a56-2b42-4a8c-aef0-75d789d3e231
 ## Site em Produção - GitHub Pages
+https://marianaacordeiro.github.io/loja-de-cosmeticos-beauty/
 ## Framework CSS
 #### MaterializeCSS
 # Dependências JavaScript
