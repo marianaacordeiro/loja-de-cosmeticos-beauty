@@ -1,0 +1,384 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  max-width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+:root {
+  --cor-branca: #fff;
+  --cor-cinza-claro: #e0e0e0;
+  --cor-cinza-medio: #bdbdbd;
+  --cor-cinza: #9e9e9e;
+  --cor-preto-claro: #212121;
+  --cor-preto: #000;
+  --fonte-principal: "Inter", serif;
+  --fonte-secundaria: "Open Sans", serif;
+  --tamanho-logo: clamp(1.5rem, 5vw, 2.5rem);
+  --tamanho-h1: clamp(1.5625rem, 4vw, 1.875rem);
+  --tamanho-h2: clamp(2rem, 4vw, 3rem);
+  --tamanho-subtitulo: clamp(.75rem, 1.2vw, 1rem);
+  --tamanho-texto: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+body {
+  font-family: var(--fonte-principal);
+}
+
+nav {
+  border-top: .5rem solid var(--cor-preto);
+  background-color: #0000;
+}
+
+.brand-logo {
+  letter-spacing: .5rem;
+  font-weight: 550;
+  font-size: var(--tamanho-logo);
+}
+
+nav i {
+  color: var(--cor-preto);
+  width: 2rem;
+  margin-right: .6rem;
+}
+
+@media (width >= 20rem) and (width <= 26.5625rem) {
+  nav i {
+    color: var(--cor-preto);
+    width: .6125rem;
+    margin-right: .3rem;
+    padding: 0 .6rem;
+  }
+}
+
+nav .tab {
+  color: var(--cor-preto);
+  border-bottom: .1rem solid var(--cor-preto);
+  font-weight: 500;
+}
+
+nav ul {
+  gap: 1.2rem;
+  margin: 0;
+  list-style: none;
+}
+
+.tabs .tab a:focus, .tabs .tab a:active {
+  box-shadow: none !important;
+  color: inherit !important;
+  background-color: #0000 !important;
+  outline: none !important;
+}
+
+.tabs .indicator {
+  background-color: var(--cor-preto) !important;
+}
+
+.sidenav {
+  flex-direction: column;
+  width: 18.75rem;
+  height: 100vh;
+  display: flex;
+  padding-bottom: 1rem !important;
+}
+
+.sidenav a {
+  color: var(--cor-preto);
+  font-weight: 500;
+  padding: 0 1.25rem !important;
+}
+
+.sidenav i {
+  margin: 0 !important;
+}
+
+.sidenav-close {
+  margin-left: 3rem;
+}
+
+.header {
+  border-bottom: .0625rem solid var(--cor-cinza-claro);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  display: flex;
+}
+
+.header h5 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.sidenav-footer {
+  border-top: .0625rem solid var(--cor-cinza-claro);
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding: 1rem;
+  display: flex;
+}
+
+.sidenav-footer a {
+  font-size: 1.25rem;
+}
+
+.container {
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  display: flex;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner img {
+  object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+  height: 25rem;
+  display: block;
+}
+
+.banner picture {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.banner-text {
+  text-shadow: .1875rem .25rem .3125rem #00000080;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  color: var(--cor-branca);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.banner-text h3 {
+  text-transform: uppercase;
+  font-size: var(--tamanho-subtitulo);
+  letter-spacing: .125rem;
+  text-align: center;
+  margin: 0;
+  font-weight: 400;
+}
+
+.banner-text h1 {
+  text-transform: uppercase;
+  font-size: var(--tamanho-h1);
+  letter-spacing: .125rem;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.row, .row .col {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  height: 100%;
+  padding: 1rem;
+}
+
+footer .container {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+footer .brand-logo {
+  text-align: center;
+  overflow: hidden;
+}
+
+.center-aling {
+  margin-left: 6rem;
+}
+
+.center-aling .col {
+  text-align: left;
+  padding: 2rem;
+}
+
+footer h5 {
+  font-size: var(--tamanho-subtitulo);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+footer p, footer a {
+  font-size: var(--fonte-secundaria);
+  text-align: center;
+  margin-right: 3rem;
+  font-weight: lighter;
+}
+
+.redes-sociais {
+  padding: 1.3rem 0;
+}
+
+.redes-sociais a img {
+  opacity: .7;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0 .5rem;
+  transition: opacity .3s;
+}
+
+.redes-sociais a:hover img {
+  opacity: 1;
+}
+
+hr {
+  background-color: var(--cor-preto-claro);
+  border: none;
+  height: .0625rem;
+}
+
+address {
+  font-style: normal;
+  font-weight: lighter;
+}
+
+@media (width >= 22.5rem) {
+  .container {
+    max-width: 100%;
+  }
+
+  .banner img {
+    max-width: 100%;
+    height: 70vh;
+  }
+
+  .banner-text {
+    margin-top: 12rem;
+  }
+}
+
+@media (width >= 48rem) {
+  .container {
+    max-width: 100%;
+  }
+
+  .banner img {
+    max-width: 100%;
+    height: 70vh;
+  }
+
+  .banner-text {
+    margin-top: 20rem;
+  }
+}
+
+@media (width >= 64rem) {
+  .container {
+    max-width: 100%;
+  }
+
+  .banner img {
+    max-width: 100%;
+    height: 70vh;
+  }
+
+  .banner-text {
+    margin-top: 7rem;
+  }
+}
+
+@media (width >= 90rem) {
+  .container {
+    max-width: 100%;
+  }
+
+  .banner img {
+    max-width: 100%;
+    height: 70vh;
+  }
+
+  .banner-text {
+    margin-top: 32rem;
+  }
+}
+
+@media (width >= 22.5rem) {
+  .container {
+    max-width: 100%;
+  }
+
+  .banner img {
+    max-width: 100%;
+    height: 70vh;
+  }
+
+  .banner-text {
+    margin-top: 12rem;
+  }
+}
+
+@media (width >= 48rem) {
+  .container {
+    max-width: 100%;
+  }
+
+  .banner img {
+    max-width: 100%;
+    height: 70vh;
+  }
+
+  .banner-text {
+    margin-top: 20rem;
+  }
+}
+
+@media (width >= 64rem) {
+  .container {
+    max-width: 100%;
+  }
+
+  .banner img {
+    max-width: 100%;
+    height: 70vh;
+  }
+
+  .banner-text {
+    margin-top: 7rem;
+  }
+}
+
+@media (width >= 90rem) {
+  .container {
+    max-width: 100%;
+  }
+
+  .banner img {
+    max-width: 100%;
+    height: 70vh;
+  }
+
+  .banner-text {
+    margin-top: 32rem;
+  }
+}
+/*# sourceMappingURL=index.691924f5.css.map */
