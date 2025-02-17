@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="never" />
+    <meta name="referrer" content="no-referrer" />
+    <title>Cadastro e Login</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/libraries/resources/imagens/icon-beauty.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/libraries/materialize/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="assets/libraries/resources/styles/style.css" />
+    <link rel="stylesheet" href="assets/libraries/resources/styles/form.css" />
+  </head>
+  <body>
+    <!--nav-->
+    <nav class="nav-extended">
+      <div class="nav-wrapper white">
+        <a href="index.html" class="brand-logo center black-text">BEAUTY</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+          ><i class="material-icons black-text">menu</i></a
+        >
+        <ul id="nav-mobile" class="right">
+          <li>
+            <i class="material-icons">search</i>
+          </li>
+          <li><i class="material-icons">star</i></li>
+          <li>
+            <i class="material-icons">shopping_bag</i>
+          </li>
+          <li><i class="material-icons hide-on-small-only">person</i></li>
+        </ul>
+      </div>
+      <div class="nav-content white hide-on-med-and-down">
+        <ul class="tabs tabs-fixed-width">
+          <li class="tab">
+            <a href="perfumes.html" class="black-text left-aling">Perfumes</a>
+          </li>
+          <li class="tab">
+            <a class="active black-text center" href="maquiagem.html"
+              >Maquiagem</a
+            >
+          </li>
+          <li class="tab">
+            <a href="skincare.html" class="black-text right">Skincare</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+      <div class="header">
+        <h5>COMPRAR ONLINE</h5>
+        <a href="#" class="sidenav-close"
+          ><i class="material-icons black-text">close</i></a
+        >
+      </div>
+      <li>
+        <a href="perfumes.html"
+          >Perfumes<i class="material-icons right">chevron_right</i></a
+        >
+      </li>
+      <li>
+        <a href="maquiagem.html"
+          >Maquiagem<i class="material-icons right">chevron_right</i></a
+        >
+      </li>
+      <li>
+        <a href="skincare.html"
+          >Skincare<i class="material-icons right">chevron_right</i></a
+        >
+      </li>
+      <div class="sidenav-footer">
+        <!--Arrumar o espaço e tamanho -->
+        <a href="formulario.html">Minha conta</a>
+        <i class="small material-icons">person</i>
+      </div>
+    </ul>
+    <!--nav/-->
+    <main class="main-form">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h1 class="center">Conta</h1>
+            <div class="card-form">
+              <div class="custom-tabs">
+                <div class="custom-tab active" data-target="#login">Entrar</div>
+                <div class="custom-tab" data-target="#cadastro">Cadastrar</div>
+              </div>
+              <div id="login" class="tabs-content active">
+                <form id="formulario">
+                  <h5>Bem-vindo(a) de volta.</h5>
+                  <p>Iniciar sessão com o seu e-mail e senha.</p>
+                  <div class="input-field">
+                    <input
+                      id="login_email"
+                      type="email"
+                      class="validate"
+                      required
+                    />
+                    <label for="login_email">E-mail</label>
+                    <span class="helper-text" id="error-email"></span>
+                  </div>
+                  <div class="input-field">
+                    <input
+                      id="login_senha"
+                      type="password"
+                      class="validate"
+                      required
+                    />
+                    <label for="login_senha">Senha</label>
+                    <span class="helper-text" id="error-senha"></span>
+                  </div>
+                  <div style="margin-top: 10px">
+                    <a href="#" class="forgot-password">Esqueceu sua senha?</a>
+                  </div>
+                  <label>
+                    <input type="checkbox" class="filled-in" required />
+                    <span>Manter conectado</span>
+                  </label>
+                  <div class="center-align">
+                    <button
+                      class="btn waves-effect waves-light black"
+                      type="submit"
+                    >
+                      Entrar
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <!-- Modal de Usuário Não Cadastrado -->
+              <div id="modal-usuario-nao-cadastrado" class="modal">
+                <div class="modal-content">
+                  <h4>Usuário Não Cadastrado</h4>
+                  <p>
+                    Não encontramos nenhum usuário com esse e-mail. Por favor,
+                    cadastre-se primeiro.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <a
+                    href="#!"
+                    class="modal-close waves-effect waves-green btn-flat"
+                    >Fechar</a
+                  >
+                </div>
+              </div>
+              <div id="cadastro" class="tabs-content">
+                <form id="formCadastro">
+                  <p>
+                    Crie uma conta e tenha uma experiência <br />
+                    personalizada BEAUTY
+                  </p>
+                  <div class="input-field">
+                    <input
+                      id="email"
+                      type="email"
+                      class="validate"
+                      required
+                      pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                    />
+                    <label for="email">E-mail</label>
+                    <span class="helper-text" id="error-email"></span>
+                  </div>
+                  <div class="input-field">
+                    <input
+                      id="senha"
+                      type="password"
+                      class="validate"
+                      required
+                      pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+                      title="A senha deve conter no minimo 6 caracteres, numeros e letras"
+                    />
+                    <label for="senha">Senha</label>
+                    <span class="helper-text" id="error-senha"></span>
+                  </div>
+                  <div class="input-field">
+                    <input id="nome" type="text" class="validate" required />
+                    <label for="nome">Nome</label>
+                  </div>
+                  <div class="input-field">
+                    <input
+                      id="sobrenome"
+                      type="text"
+                      class="validate"
+                      required
+                    />
+                    <label for="sobrenome">Sobrenome</label>
+                  </div>
+                  <div class="input-field">
+                    <input
+                      id="telefone"
+                      type="tel"
+                      class="validate"
+                      required
+                      placeholder="(00) 00000-0000"
+                      maxlength="15"
+                    />
+                    <label for="telefone">Telefone</label>
+                    <span class="helper-text" id="error-telefone"></span>
+                  </div>
+                  <div class="input-field">
+                    <input
+                      id="cpf"
+                      type="text"
+                      class="validate"
+                      required
+                      pattern="^\d{3}\.\d{3}\.\d{3}-\d{2}$"
+                      title="Digite o CPF no formato 000.000.000-00"
+                      placeholder="000.000.000-00"
+                      maxlength="14"
+                    />
+                    <label for="cpf">CPF</label>
+                    <span class="helper-text" id="error-cpf"></span>
+                  </div>
+                  <div class="input-field">
+                    <input
+                      id="data_nascimento"
+                      type="text"
+                      class="datepicker"
+                      required
+                    />
+                    <label for="data_nascimento">Data de Nascimento</label>
+                  </div>
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="filled-in checkbox"
+                      required
+                    />
+                    <span>Eu aceito receber comunicação da marca.</span>
+                  </label>
+                  <div class="center-align">
+                    <button
+                      class="btn waves-effect waves-light black"
+                      type="submit"
+                    >
+                      Criar Conta
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--footer-->
+    <footer class="page-footer black">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 center">
+            <a href="#" class="brand-logo white-text">BEAUTY</a>
+          </div>
+          <div class="center-aling">
+            <div class="col s12 m3 l3">
+              <h5 class="white-text">Explore Beauty.com</h5>
+              <ul>
+                <li>
+                  <a class="grey-text text-lighten-3" href="#!">Perfumes</a>
+                </li>
+                <li>
+                  <a class="grey-text text-lighten-3" href="#!">Maquiagem</a>
+                </li>
+                <li>
+                  <a class="grey-text text-lighten-3" href="#!">Skincare</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col s12 m3 l3">
+              <h5 class="white-text">Serviços online</h5>
+              <ul>
+                <li>
+                  <a class="grey-text text-lighten-3" href="#!"
+                    >Métodos de pagamento</a
+                  >
+                </li>
+                <li>
+                  <a class="grey-text text-lighten-3" href="#!"
+                    >Opções de envio</a
+                  >
+                </li>
+                <li>
+                  <a class="grey-text text-lighten-3" href="#!">Minha conta</a>
+                </li>
+                <li>
+                  <a class="grey-text text-lighten-3" href="#!">Devoluções</a>
+                </li>
+                <li>
+                  <a class="grey-text text-lighten-3" href="#!"
+                    >Instruções de cuidado</a
+                  >
+                </li>
+                <li>
+                  <a class="grey-text text-lighten-3" href="#!"
+                    >Perguntas Frequentes</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col s12 m3 l3">
+              <h5 class="white-text">Serviços da boutique</h5>
+              <ul>
+                <li>
+                  <a class="grey-text text-lighten-3" href="#!"
+                    >Encontre uma Boutique</a
+                  >
+                </li>
+                <li>
+                  <a class="grey-text text-lighten-3" href="#!"
+                    >Agendamentos com Beauty</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container redes-sociais">
+        <a href="https://www.facebook.com" target="_blank">
+          <img
+            src="./assets/libraries/resources/imagens/facebook.png"
+            alt="Facebook"
+            width="32"
+            height="32"
+          />
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img
+            src="./assets/libraries/resources/imagens/instagram.png"
+            alt="Instagram"
+            width="32"
+            height="32"
+          />
+        </a>
+        <a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank">
+          <img
+            src="./assets/libraries/resources/imagens/whatsapp.png"
+            alt="WhatsApp"
+            width="32"
+            height="32"
+          />
+        </a>
+      </div>
+      <div class="container">
+        <address>
+          Europrestígio Distribuição e Comércio de Artigos de Luxo LTDA CNPJ:
+          00.000.00/0000-00 Endereço: Av. Fulano, 1663, 6º Andar Guarapuava- PR,
+          00000-000, Brasil
+        </address>
+      </div>
+    </footer>
+    <script src="assets/libraries/materialize/js/materialize.min.js"></script>
+    <script src="assets/libraries/resources/scripts/form.js"></script>
+  </body>
+</html>

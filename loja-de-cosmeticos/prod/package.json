@@ -1,0 +1,27 @@
+{
+  "name": "loja-de-cosmeticos",
+  "version": "1.0.0",
+  "description": "https://www.figma.com/design/Xb4sZVEiJLshm2cPKIalBs/beauty?node-id=0-1&t=PUNc3dwmXj38RGF7-1",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build:parcel": "parcel build index.html --public-url /projeto_beauty",
+    "preddeploy": "npm run bulid",
+    "deploy": "gh-pages -d dist",
+    "clean:linux": "rm -rf dist/*",
+    "clean:windows": "rd /s/q dist"
+  },
+  "keywords": [],
+  "author": "mariana",
+  "license": "ISC",
+  "dependencies": {
+    "abc": "^0.6.1",
+    "jquery": "^3.7.1",
+    "materialize-css": "^1.0.0-rc.2",
+    "xyz": "^5.0.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0",
+    "parcel": "^2.13.3"
+  }
+}
