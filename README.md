@@ -12,7 +12,7 @@ https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:3bb54a56-2b42-4a8c-aef0-75d789d3e
 ## Site em Produção - GitHub Pages
 https://marianaacordeiro.github.io/loja-de-cosmeticos-beauty/
 ## Apresentação do Projeto
-![image](https://github.com/user-attachments/assets/44cb48f6-e1be-4ba7-a53d-8a493677c5f3)
+https://youtu.be/yCUAa1MwZjM
 ## Framework CSS
 #### MaterializeCSS
 # Dependências JavaScript
